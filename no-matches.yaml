@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: no-matches
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: no-matches
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: no-matches
+    spec:
+      containers:
+      - name: main
+        image: 'busybox:latest'
+        command:
+        - 'sleep'
+        - '999m'
