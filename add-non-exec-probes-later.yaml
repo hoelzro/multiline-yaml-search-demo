@@ -18,3 +18,7 @@ spec:
         ports:
         - name: http
           containerPort: 80
+        livenessProbe:
+          httpGet:
+            port: http
+          timeoutSeconds: 2
