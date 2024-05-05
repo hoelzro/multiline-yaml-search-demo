@@ -18,3 +18,8 @@ spec:
         command:
         - 'sleep'
         - '999m'
+        livenessProbe:
+          exec:
+            command:
+            - 'true'
+          timeoutSeconds: 2
