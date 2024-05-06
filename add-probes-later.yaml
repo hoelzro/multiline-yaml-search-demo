@@ -22,4 +22,4 @@ spec:
           exec:
             command:
             - 'true'
-          timeoutSeconds: 2
+          timeoutSeconds: 3
