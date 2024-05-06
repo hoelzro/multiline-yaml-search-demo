@@ -21,4 +21,4 @@ spec:
         livenessProbe:
           httpGet:
             port: http
-          timeoutSeconds: 2
+          timeoutSeconds: 3
